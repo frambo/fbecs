@@ -1,0 +1,41 @@
+extends layout
+
+block content
+
+  div.container
+    div.page-header
+      ul.nav.nav-pills.pull-right
+        - var fb_url = (user===null)?'/auth/facebook':'/logout';
+        - var fb_txt = (user===null)?'Login with Facebook':'Logout';
+        li
+          a.btn.btn-block.btn-social.btn-facebook(href=fb_url)
+            i.fa.fa-facebook   #{fb_txt}
+        li
+          a.btn.btn-block(href='#') About
+        li
+          a.btn.btn-block(href='#') Contact
+      h3.text-muted Project #{title}
+
+    div.jumbotron
+      h1 Some Heading Text
+      p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. 
+      p.btn.btn-lg.btn-success(href='#', role='button') Sign up NOW 
+      
+    div.content
+      div.marketing
+        div.col-lg-6
+          h4 Events
+          p To list the events in the database go 
+            a(href="/fbevtlist") here
+
+          h4 Subheading
+          p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+
+        div.col-lg-6
+          h4 Adminstration
+          p To manage the application jobs scheduler go 
+            a(href="/adm") here
+
+          h4 Roadmap
+          p The planned list of development activities are registered in this 
+            a(href="/log") log. 

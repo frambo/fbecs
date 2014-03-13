@@ -1,0 +1,30 @@
+extends layout
+
+block append head 
+ script(src="/javascripts/jquery/jquery-1.7.2.min.js") 
+
+block content
+  h1= title
+  p Facebook events in database
+
+
+  p This is text before table.
+  table
+    thead
+      tr
+       th Event ID
+       th Event Name
+       th Start Date [dd/mm/yyyy]
+    tbody
+      each item, i in items
+       tr
+        td(style='width: 15%') #{item.name} 
+        td(style='width: 60%') #{item.description} 
+        td #{prettyDate(item.start_time)}
+
+  - function prettyDate(dateString) {return '>> '+formattedTime(dateString);}
+  - function formattedTime(dateString){var d = new Date(dateString*1000); 
+  -   return pad(d.getDate())+'/'+pad(d.getMonth()+1)+'/'+d.getFullYear()+" "+pad(d.getHours())+":"+pad(d.getMinutes())+":"+pad(d.getSeconds());}
+  - function pad(n){return n<10 ? '0'+n : n;}
+
+

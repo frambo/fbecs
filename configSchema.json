@@ -1,0 +1,12 @@
+{
+	"id": "/FBconfigfile",
+	"title": "Facebook configuration file",
+    "type": "object",
+    "properties": {
+      "client_id": {"type": "string"},
+      "client_secret": {"type": "string"},
+      "grant_type": {"type": "string"},
+      "redirect_uri": {"type": "string"}
+    },
+    "required": ["client_id", "client_secret", "grant_type", "redirect_uri"]
+}

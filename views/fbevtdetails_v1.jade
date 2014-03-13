@@ -1,0 +1,69 @@
+extends layout
+
+block content
+  div.container
+    div.page-header
+      ul.nav.nav-pills.pull-right
+        li
+          a.btn.btn-block(href='/') Home
+      h3.text-muted Project #{title}
+      h5.text-muted Facebook event details
+
+    div.content
+      h5.text-muted Event Details
+      form#eventDetails.form-horizontal(role="form", name="publish", method="post", action="/publish")
+        div.form-group
+          label.col-sm-2.control-label Id
+          div.col-sm-10
+            input#inputEid.form-control(type="text", placeholder="eid", name="eid", readonly, value="#{item.eid}")
+        div.form-group
+          label.col-sm-2.control-label Title
+          div.col-sm-10
+            input#inputName.form-control(type="text", placeholder="name", name="name", readonly, size=100, value="#{item.name}")
+        div.form-group
+          label.col-sm-2.control-label Location
+          div.col-sm-10
+            input#inputLocation.form-control(type="text", placeholder="location", name="location", readonly, size=100, value="#{item.location}")
+        div.form-group
+          label.col-sm-2.control-label Description
+          div.col-sm-10
+            textarea#inputDescription.form-control(type="text", placeholder="description", name="description", readonly, rows= 5, cols=100) #{item.description}
+        div.form-group
+          label.col-sm-2.control-label Attending
+          div.col-sm-10
+            input#inputAttending.form-control(type="text", placeholder="attending", name="attending", readonly, value="#{item.attending_count}")
+        div.form-group
+          label.col-sm-2.control-label Declined
+          div.col-sm-10
+            input#inputDeclined.form-control(type="text", placeholder="declined", name="declined", readonly, value="#{item.declined_count}")
+        div.form-group
+          label.col-sm-2.control-label Unsure
+          div.col-sm-10
+            input#inputUnsure.form-control(type="text", placeholder="unsure", name="unsure", readonly, value="#{item.unsure_count}")
+        h5.text-muted Event Venue
+        div.form-group
+          label.col-sm-2.control-label Location
+          div.col-sm-10
+            input#inputVenueLocation.form-control(type="text", placeholder="vlocation", name="vlocation", readonly, size=100, value="#{item.venue.name}")
+        div.form-group
+          label.col-sm-2.control-label Address
+          div.col-sm-10
+            input#inputVenueStreet.form-control(type="text", placeholder="vstreet", name="vstreet", readonly, size=50, value="#{item.venue.street}")
+        div.form-group
+          label.col-sm-2.control-label City
+          div.col-sm-10
+            input#inputVenueCity.form-control(type="text", placeholder="vcity", name="vcity", readonly, size=50, value="#{item.venue.city}")
+        div.form-group
+          label.col-sm-2.control-label Latitude
+          div.col-sm-10
+            input#inputVenueLatitude.form-control(type="text", placeholder="vlatitude", name="vlatitude", readonly, size=50, value="#{item.venue.latitude}")
+        div.form-group
+          label.col-sm-2.control-label Longitude
+          div.col-sm-10
+            input#inputVenueLongitude.form-control(type="text", placeholder="vlongitude", name="vlongitude", readonly, size=50, value="#{item.venue.longitude}")
+        div
+          br 
+          button#publishBtn.btn.btn-primary(type="submit") publish
+          br
+      h5 Back to 
+        a(href="/fbevtlist") List of Events 

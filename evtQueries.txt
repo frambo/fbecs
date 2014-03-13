@@ -1,0 +1,3 @@
+select eid, name, description, location, start_time, end_time, pic, attending_count, declined_count, unsure_count, venue from event where (contains("BarrioLatino") OR contains("Bleza") OR contains("b.leza") OR contains("fiesta club") OR contains("navy party") OR contains("TMN ao vivo") OR contains("Jazzy") OR contains("Hawaii") OR 
+contains("Sussussu") OR contains("Love2Dance") OR contains("Espaço 20") OR contains("Muxima") OR contains("Havana") OR contains("Academia de Dança"))AND venue.country="Portugal" AND start_time >= now();
+select eid, name, description, location, start_time, end_time, pic, attending_count, declined_count, unsure_count, venue from event where (contains("BarrioLatino") OR contains("Bleza") OR contains("Jazzy"))AND venue.country="Portugal";

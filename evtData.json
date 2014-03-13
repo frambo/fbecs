@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "eid": 627129994010677,
+      "name": "UMBAR vs UMDJ",
+      "description": "Mais uma noite Fria para Aquecer o UMBAR com a Tua Companhia... O FdS começa Aqui... no Teu UMBAR",
+      "start_time": "2013-12-07T22:45:00+0000",
+      "location": "Umbar Estoril",
+      "update_time": 1386170240
+    },
+    {
+      "eid": 1394969557413886,
+      "name": "Música ao Vivo com ANA RITA INÁCIO",
+      "description": "Mais uma estreia no Teu local de Música, as Tuas QUINTAS no UMBAR...\nAPARECE!",
+      "start_time": "2013-12-05T22:45:00+0000",
+      "location": "Umbar Estoril",
+      "update_time": 1386257452
+    },
+    {
+      "eid": 580095615396017,
+      "name": "UMQUIZ",
+      "description": "Tema: FELIZ NATAL! LEMBRAM-SE???\nUM resumo de todos os QUIZ DE 2013... atentos?",
+      "start_time": "2013-12-03T22:45:00+0000",
+      "location": "Umbar Estoril",
+      "update_time": 1385926727
+    },
+    {
+      "eid": 659074087477883,
+      "name": "UMBAR vs UMDJ",
+      "description": "",
+      "start_time": "2013-11-29T22:45:00+0000",
+      "location": "Umbar Estoril",
+      "update_time": 1385581229
+    },
+    {
+      "eid": 228451413998882,
+      "name": "Música ao Vivo com MAROSKA",
+      "description": "",
+      "start_time": "2013-11-28T22:45:00+0000",
+      "location": "Umbar Estoril",
+      "update_time": 1385470874
+    },
+    {
+      "eid": 756739327687531,
+      "name": "LAST MINUTE FREE PARTY",
+      "description": "SHAKE YOUR BONES LIKE THERE'S NO TOMORROW!!\n\nDj Manuel Lobo, Dj Backpackers Hostel Portugal, Dj Luzinha AKA Luisa Reis Silva e mais surpresas que estão para vir.\nTemos motivos de sobra para festejar, acima de tudo amigos. \nVai ser de arromba, como já estamos habituados.\n\nEstreamos uma sala nova para dançar até o sol nos dar pelo joelho...\n\n* * * * * \nDj Manuel Lobo, Dj Backpackers Hostel Portugal, Dj luzinha AKA Luisa Reis Silva and more surprises to come.\nWe have plenty of reasons to celebrate, above all friends.\nIt will be raucous, as we are already accustomed.\nDebuted a new room to dance until the sun is on our knees...",
+      "start_time": "2013-11-22T21:00:00+0000",
+      "location": "Backpackers Hostel Portugal",
+      "update_time": 1385120717
+    },
+    {
+      "eid": 214564498723199,
+      "name": "Open Day",
+      "description": "Open Day - Dia 7 de Dezembro",
+      "start_time": "2013-12-02",
+      "location": "Plenitude Total",
+      "update_time": 1386002957
+    },
+    {
+      "eid": 261580073990278,
+      "name": "Venda de Natal do Estoril",
+      "description": "O Centro Paroquial do Estoril vai realizar nas suas instalações do Complexo da Senhora da Boa Nova nos próximos dias 06 a 08 de Dezembro, mais uma grande Venda de Natal que tem como objectivo a celebração do Espírito de Natal e a angariação de fundos para as várias áreas de solidariedade que o CPE promove. Fiquem atentos às novidades deste grande evento !",
+      "start_time": "2013-12-06T10:00:00+0000",
+      "location": "Centro Paroquial do Estoril",
+      "update_time": 1384014328
+    },
+    {
+      "eid": 180935888773786,
+      "name": "Almoço de Natal",
+      "description": "",
+      "start_time": "2013-12-07",
+      "location": "Space Shuttle - Travel Services",
+      "update_time": 1385467351
+    }
+  ]
+}

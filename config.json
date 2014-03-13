@@ -1,0 +1,6 @@
+{
+  "client_id":  "215919575167877",
+  "client_secret":  "52a4bd5ac85cf01716d77f7ed2efd7a6",
+  "grant_type": "client_credentials",
+  "redirect_uri": "http://localhost:3000/"
+}

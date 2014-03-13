@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  div.container
+    div.page-header
+      ul.nav.nav-pills.pull-right
+        li
+          a.btn.btn-block(href='/') Home
+      h3.text-muted Project #{title}
+      h5.text-muted Manage Status of Scheduled Jobs
+ 
+    div.content
+      div.row
+        div.col-md-4
+          label.text-muted Feedback:
+        div.col-md-4
+          span#feedback
+      br
+      div
+        table.table
+          tr
+            td
+              p.text-primary Status of Job: Facebook Event Collection
+            td
+              label#job1Status.text-muted.pull-left Undefined
+            td
+              button#toggle1.btn.btn-primary.pull-right(type='button') Start/Stop 
+          tr
+            td
+              p.text-primary Status of Job: Facebook Event Publishing 
+            td
+              label#job2Status.text-muted.pull-left Undefined 
+            td
+              button#toggle2.btn.btn-primary.pull-right(type='button') Start/Stop
+
+block append scripts
+  script(src="/js/adm_cl.js")

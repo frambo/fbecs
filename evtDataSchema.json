@@ -1,0 +1,37 @@
+{
+	"id": "/FBevtdatafile",
+	"title": "Facebook FQL query event data",
+	"type": "array",
+	"items": {
+		"title": "Facebook event",
+		"type": "object",
+    		"properties": {
+      			"eid": {"description": "Unique event id", "type": "number"},
+      			"name": {"description": "Name of event", "type": "string"},
+      			"description": {"type": "string"},
+            "location":{"type": "string"},
+      			"start_time": {"description": "Start data for the event", "type": "number"},
+      			"end_time": {"description": "End data for the event", "type": "number"},
+      			"pic": {"description": "Path for the event picture", "type": "string"},
+            "attending_count": {"description": "Attending people count", "type": "number"},
+            "declined_count": {"description": "Declined people count", "type": "number"},
+            "unsure_count": {"description": "Unsure people count", "type": "number"},
+            "venue":{
+              "type": "object",
+                "properties": {
+                    "street": {"type": "string"},
+                    "city": {"type": "string"},
+                    "state": {"type": "string"},
+                    "country": {"type": "string"},
+                    "zip": {"type": "string"},
+                    "latitude": {"type": "number"},
+                    "longitude": {"type": "number"},
+                    "id": {"type": "number"},
+                    "name": {"type": "string"}
+                },
+                "required": ["id", "name"]
+            }
+    	},
+    	"required": ["eid", "name", "start_time"]	
+	}
+}

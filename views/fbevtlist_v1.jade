@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  div.container
+    div.page-header
+      ul.nav.nav-pills.pull-right
+        li
+          a.btn.btn-block(href='/') Home
+      h3.text-muted Project #{title}
+      h5.text-muted Facebook events in database
+
+    div.content
+      table.table
+        tbody
+          tr
+            td
+              h5 Filter
+            td
+              select#filter.selectpicker
+                option(selected=(filter == 'All')?"selected":undefined) All
+                option(selected=(filter == 'Month')?"selected":undefined) Month
+                option(selected=(filter == 'Week')?"selected":undefined) Week
+                option(selected=(filter == 'Day')?"selected":undefined) Day
+      br
+      table.table.table-bordered.table-hover
+        thead
+          tr
+            th Event Picture
+            th Event Title
+            th Start Date [dd/mm/yyyy]
+        tbody
+           each item, i in items
+             tr
+               td(style='width: 10%') 
+                 a(href="/fbevtdetails?id=#{item.eid}")
+                   img(src="#{item.pic}", height="100", width="100") 
+               td(style='width: 60%') #{item.name} 
+               td #{prettyDate(item.start_time)}
+
+  - function prettyDate(dateString) {return '>> '+formattedTime(dateString);}
+  - function formattedTime(dateString){var d = new Date(dateString*1000); 
+  -   return pad(d.getDate())+'/'+pad(d.getMonth()+1)+'/'+d.getFullYear()+" "+pad(d.getHours())+":"+pad(d.getMinutes())+":"+pad(d.getSeconds());}
+  - function pad(n){return n<10 ? '0'+n : n;}
+
+block append scripts
+  script(src="/js/evtlist_cl.js")

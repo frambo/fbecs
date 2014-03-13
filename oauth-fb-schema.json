@@ -1,0 +1,10 @@
+{
+	"id": "/FBauthfile",
+	"title": "Facebook auth token file",
+    "type": "object",
+    "properties": {
+      "id": {"type": "string"},
+      "accessToken": {"type": "string"}
+    },
+    "required": ["id", "accessToken"]
+}

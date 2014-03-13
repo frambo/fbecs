@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  p Log for issues and progress
+
+
+  p This is text before table.
+  table
+    thead
+      tr
+       th Date
+       th Description
+       th Status
+    tbody
+      each item, i in items
+       tr
+        td #{item.date} #
+        td #{item.topic} 
+        td [ #{item.status} ]
